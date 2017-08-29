@@ -1,15 +1,3 @@
-/*************************************************************************
-  > File Name: two_sum_first.cpp
-  > Author: Ukey
-  > Mail: gsl110809@gmail.com
-  > Created Time: 2017年08月27日 星期日 10时53分12秒
- ************************************************************************/
-
-#include <iostream>
-using namespace std;
-#include <vector>
-#include <algorithm>
-
 class Solution {
 	public:
 		vector<int> twoSum(vector<int>& nums, int target) {
