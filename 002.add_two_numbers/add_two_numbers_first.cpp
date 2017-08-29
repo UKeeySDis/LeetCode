@@ -1,12 +1,3 @@
-/*************************************************************************
-  > File Name: add_two_numbers_first.cpp
-  > Author: Ukey
-  > Mail: gsl110809@gmail.com
-  > Created Time: 2017年08月29日 星期二 14时58分00秒
- ************************************************************************/
-
-#include <iostream>
-using namespace std;
 /**
  *  * Definition for singly-linked list.
  *   * struct ListNode {
@@ -15,14 +6,14 @@ using namespace std;
  *      *     ListNode(int x) : val(x), next(NULL) {}
  *       * };
  *        */
+/* 本来尝试用一个新的链表来保存结果,但是最后居然内存超过限制了。所以就用原来的链表来存。唯一需要考虑的是,两个链表长度相等,但最后一个结点进位的情况*/
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        /* 本来尝试用一个新的链表来保存结果,但是最后居然内存超过限制了。所以就用原来的链表来存。唯一需要考虑的是,两个链表长度相等,但最后一个结点进位的情况*/
 	ListNode *p1 = l1;
         ListNode *p2 = l2;
-        int flag = 0;//用来记录哪个链表最长,结果的时候利于返回	
-        int carry = 0;//进位标识
+        int flag = 0;
+        int carry = 0;
         while(p1 || p2)
         {
             int num;
