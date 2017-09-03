@@ -1,3 +1,7 @@
+/* 用map记录罗马数字与数字之前的关系
+ * 接着只用处理特殊一点的情况,即IV、IX这类
+ * 前看一位字符,如果当前字符代表的值小于下一个字符代表的值,则代表是特殊情况,特殊处理
+ */
 class Solution {
 	public:
 		int romanToInt(string s)
