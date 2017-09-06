@@ -2,7 +2,7 @@
 class Solution
 {
 	public:
-		int threeNumCloseset(vector<int>& nums, int target)
+		int threeSumClosest(vector<int>& nums, int target)
 		{
 			int min_close = 100000;
 			int len = nums.size() - 2;
