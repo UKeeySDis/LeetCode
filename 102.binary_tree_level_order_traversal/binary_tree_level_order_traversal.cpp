@@ -14,7 +14,7 @@ class Solution
 				{
 					TreeNode *p = cur_level.front();
 					cur_level.pop();
-					level.push_back(p);
+					level.push_back(p->val);
 					if(p->left != NULL) next_level.push(p->left);
 					if(p->right != NULL) next_level.push(p->right);
 				}
